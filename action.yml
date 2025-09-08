@@ -40,7 +40,7 @@ runs:
       run: |
         touch cron.txt
         git config --local user.email '${{ inputs.committer_email }}'
-        git config --local user.name '${{ inputs.commiter_name }}'
+        git config --local user.name '${{ inputs.committer_name }}'
         git add cron.txt
         git commit -m "${{ inputs.commit_message_prefix}} $(date +%Y-%m-%d) for ${{ inputs.branch }}"
         export SHA=`git rev-parse HEAD`
