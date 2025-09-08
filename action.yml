@@ -18,7 +18,7 @@ inputs:
     required: false
     description: Name to use for the commit, defaults to Cron CI
     default: 'Cron CI'
-  branch-prefix:
+  branch_prefix:
     required: false
     description: Prefix to use for the branch, defaults to cron-
     default: 'cron-'
